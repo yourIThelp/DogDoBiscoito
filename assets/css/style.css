@@ -3549,9 +3549,11 @@ blockquote:after,
 .comingsoon-section .newsletter-section.style2 .newsletter {
   max-width: 670px;
 }
+
 .join-us-section .newsletter-section.style2 .newsletter form .newsletter-input {
   width: 30%;
 }
+
 .join-us-section .newsletter-section.style2 .newsletter {
   max-width: 100%;
 }
@@ -4674,8 +4676,7 @@ blockquote:after,
 }
 
 .comingsoon-section {
-  background-image: url(../../assets/images/comingsoon/01.jpg);
-  height: 100vh;
+  background-image: url(../../assets/images/banner-principal.jpg);
 }
 
 @media (max-width: 991px) {
