@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Neta</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -13,6 +14,7 @@
 	<link rel="stylesheet" href="assets/css/lightcase.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 	<!-- preloader start -->
 	<div id="loading">
@@ -33,33 +35,53 @@
 			<div class="comingsoon">
 				<div class="container">
 					<div class="section-heading">
-						<a class="navbar-brand logo mb-3" href="index.html"><img src="assets/images/site-para-campanha_sem_borda.png" alt="logo"></a>
+						<a class="navbar-brand logo mb-3" href="index.html"><img
+								src="assets/images/site-para-campanha_sem_borda.png" alt="logo"></a>
 						<p>Vai disputar as eleições em 2022? Crie seu site com especialistas em marketing político.</p>
-						<p>Essa é uma página modelo para campanhas políticas, todos os textos, fotos e links são ilustrativos, entre em contato para ter o seu proprio site. </p>
+						<p>Essa é uma página modelo para campanhas políticas, todos os textos, fotos e links são
+							ilustrativos, entre em contato para ter o seu proprio site. </p>
 					</div>
 					<div class="section-wrapper">
 						<div class="campaign-countdown">
 							<ul id="countdown" class="countdown">
-								<li class="countdown-item"><div class="countdown-item-inner"><span class="count-number days">91</span><p class="count-text">Days</p></div></li>
-								
-								<li class="countdown-item"><div class="countdown-item-inner"><span class="count-number hours">01</span><p class="count-text">Hours</p></div></li>
-								
-								<li class="countdown-item"><div class="countdown-item-inner"><span class="count-number minutes">40</span><p class="count-text">Min</p></div></li>
-								
-								<li class="countdown-item"><div class="countdown-item-inner"><span class="count-number seconds">42</span><p class="count-text">Sec</p></div></li>
+								<li class="countdown-item">
+									<div class="countdown-item-inner"><span class="count-number days">91</span>
+										<p class="count-text">Days</p>
+									</div>
+								</li>
+
+								<li class="countdown-item">
+									<div class="countdown-item-inner"><span class="count-number hours">01</span>
+										<p class="count-text">Hours</p>
+									</div>
+								</li>
+
+								<li class="countdown-item">
+									<div class="countdown-item-inner"><span class="count-number minutes">40</span>
+										<p class="count-text">Min</p>
+									</div>
+								</li>
+
+								<li class="countdown-item">
+									<div class="countdown-item-inner"><span class="count-number seconds">42</span>
+										<p class="count-text">Sec</p>
+									</div>
+								</li>
 							</ul>
 						</div>
 
 						<div class="newsletter-section style2">
 							<h6>Receba notificação no lançamento</h6>
 							<div class="newsletter">
-								<form action="#">
-									<input class="newsletter-input" type="text" name="email" placeholder="Digite seu email aqui">
+								<form action="send_email.php" method="post">
+									<input class="newsletter-input" type="text" name="email"
+										placeholder="Digite seu email aqui">
+									<input type="hidden" name="formName" value="coming-soon_form" />
 									<input class="submit" type="submit">
 								</form>
 							</div>
 						</div>
-					</div>	
+					</div>
 				</div>
 			</div>
 		</div>
@@ -71,4 +93,5 @@
 	<script src='assets/js/plugins.js'></script>
 	<script src='assets/js/function.js'></script>
 </body>
+
 </html>
