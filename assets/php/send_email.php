@@ -1,7 +1,7 @@
 <?php
 //Variáveis
 
-$form_name = $_POST['formName']
+$form_name = $_POST['formName'];
 
 if ($form_name == 'index_form'){
     $nome = $_POST['Nome'];
@@ -27,7 +27,7 @@ if ($form_name == 'index_form'){
 //enviar
 
   // emails para quem será enviado o formulário
-  $destino = "arthurcarvalhoroque@gmail.com";
+  $destino = "web@halison.net"; 
   $assunto = "Contato pelo site candidato";
 
 // É necessário indicar que o formato do e-mail é html
@@ -37,10 +37,14 @@ if ($form_name == 'index_form'){
 
   $enviaremail = mail($destino, $assunto, $body, $headers);
   if($enviaremail){
-  $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
-  echo " <meta http-equiv='refresh' content='10;URL=contato.php'>";
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.location.href='../../index.html';
+    window.alert('E-MAIL ENVIADO COM SUCESSO!');
+    </SCRIPT>");
   } else {
-  $mgm = "ERRO AO ENVIAR E-MAIL!";
-  echo "";
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.location.href='../../index.html';
+    window.alert('ERRO AO ENVIAR E-MAIL!');
+    </SCRIPT>");
   }
 ?>
